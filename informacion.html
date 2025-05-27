@@ -1,18 +1,138 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charser="UTF-8">
-    <meta name ="viewport"> content="width=device-w"
-    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información - Ciberseguridad</title>
+    <style>
+        :root {
+            --fondo-oscuro: #121212;
+            --fondo-secundario: #1f1f1f;
+            --rosa: #ff66b2;
+            --blanco: #ffffff;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: var(--fondo-oscuro);
+            color: var(--blanco);
+        }
+
+        header {
+            background-color: var(--fondo-secundario);
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            color: var(--rosa);
+        }
+
+        nav {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--blanco);
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover,
+        nav a.activo {
+            color: var(--rosa);
+            text-decoration: underline;
+        }
+
+        main.info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 40px;
+        }
+
+        .bloque {
+            background-color: var(--fondo-secundario);
+            padding: 20px;
+            border-left: 5px solid var(--rosa);
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(255, 102, 178, 0.2);
+        }
+
+        .bloque h2 {
+            color: var(--rosa);
+            margin-top: 0;
+        }
+
+        footer {
+            background-color: var(--fondo-secundario);
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+            font-size: 0.9em;
+        }
+    </style>
 </head>
 <body>
 
     <header>
-        <h1>GALERIA</h1>
+        <h1>Ciberseguridad</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="galeria.html">Galería</a>
+            <a href="informacion.html" class="activo">Información</a>
+        </nav>
     </header>
-    <a href="informacion.html">INFORMACIÓN</a>
-    <a href="galeria.html">GALERIA</a>
-    <a href="index.html">INDEX</a>
-    
+
+    <main class="info-grid">
+        <section class="bloque">
+            <h2>Ciberseguridad</h2>
+            <p>La ciberseguridad es el conjunto de prácticas, tecnologías y procesos diseñados para proteger computadoras, redes, dispositivos y datos contra accesos no autorizados, principalmente ataques y daños.</p>
+            <p>Es fundamental para garantizar la privacidad y seguridad en el entorno digital, tanto a nivel personal como empresarial.</p>
+        </section>
+
+        <section class="bloque">
+            <h2>Amenazas</h2>
+            <ul>
+                <li><strong>Phishing:</strong> Correos o mensajes falsos que buscan engañar, con el fin de obtener datos personales.</li>
+                <li><strong>Malware:</strong> Programas dañinos como virus, gusanos o troyanos.</li>
+                <li><strong>Ransomware:</strong> Secuestra tus archivos y exige dinero para recuperarlos.</li>
+                <li><strong>Ingeniería social:</strong> Manipulación psicológica para obtener información sensible.</li>
+            </ul>
+        </section>
+
+        <section class="bloque">
+            <h2>Recomendaciones</h2>
+            <ul>
+                <li>Utilizar contraseñas seguras y distintas para cada cuenta.</li>
+                <li>Activar la verificación de dos pasos siempre que sea posible.</li>
+                <li>No abrir enlaces sospechosos o descargar archivos con orígenes desconocidos.</li>
+                <li>Mantener sus dispositivos y programas actualizados.</li>
+                <li>Realizar copias de seguridad regularmente.</li>
+            </ul>
+        </section>
+
+        <section class="bloque">
+            <h2>Importancia</h2>
+            <p>Con el crecimiento del trabajo remoto, la educación en línea y el uso masivo de internet, proteger nuestros datos se ha vuelto más importante que nunca.</p>
+            <p>Son las pequeñas acciones, como revisar la autenticidad de un sitio web, las que pueden marcar la diferencia.</p>
+        </section>
+
+        <section class="bloque">
+            <h2>Consecuencias</h2>
+            <p>Ignorar las medidas básicas de protección puede llevar a pérdidas económicas, robo de identidad, daño a la reputación, e incluso acceso no autorizado a cuentas bancarias o datos sensibles.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Proyecto de Ciberseguridad &copy; 2025</p>
+    </footer>
+
 </body>
 </html>
