@@ -1,18 +1,143 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charser="UTF-8">
-    <meta name ="viewport"> content="width=device-w"
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Galería - Inicio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #ff66b2, #764ba2); 
+            color: #ffffff; 
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #121212; 
+            margin: 0;
+        }
+
+        header {
+            background-color: #121212; 
+            width: 100%;
+            padding: 24px 0; 
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(255, 102, 178, 0.5); 
+            font-weight: 700;
+            letter-spacing: 1.6px; 
+            font-size: 38.4px;
+            color: #ff66b2; 
+        }
+
+        nav {
+            margin: 28.8px 0;
+            display: flex;
+            gap: 32px; 
+            justify-content: center;
+            width: 100%;
+            background-color: #1f1f1f; 
+            padding: 16px 0; 
+            box-shadow: 0 4px 8px rgba(255, 102, 178, 0.3); 
+            border-radius: 8px;
+        }
+
+        nav a {
+            color: #ff66b2; 
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 20px; 
+            padding: 8px 16px; 
+            border-radius: 6px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover,
+        nav a:focus {
+            background-color: #ff66b2;
+            color: #121212;
+            outline: none;
+        }
+
+        main {
+            max-width: 800px;
+            width: 90%;
+            text-align: center;
+            padding: 32px; 
+            background-color: #1f1f1f;
+            border-radius: 8px;
+            box-shadow: 0 8px 20px rgba(118, 75, 162, 0.5); 
+            flex-grow: 1;
+            margin-bottom: 0;
+            color: #ffffff; 
+        }
+
+        main h2 {
+            font-size: 32px; 
+            margin-bottom: 16px;
+            color: #ff66b2; 
+        }
+
+        main p {
+            font-size: 19.2px; 
+            line-height: 1.6;
+            color: #ffffff; 
+        }
+
+        footer {
+            width: 100%;
+            text-align: center;
+            padding: 16px 0; 
+            background-color: #121212; 
+            color: #ff66b2; 
+            font-size: 14.4px; 
+            box-shadow: inset 0 1px 1px rgba(255, 102, 178, 0.2);
+            border-top: 1px solid #764ba2; 
+        }
+
+        @media (max-width: 480px) {
+            nav {
+                flex-direction: column;
+                gap: 16px; 
+            }
+
+            nav a {
+                font-size: 16px; 
+            }
+
+            header {
+                font-size: 28.8px; 
+            }
+
+            main h2 {
+                font-size: 24px; 
+            }
+
+            main p {
+                font-size: 16px;
+            }
+        }
+    </style>
 </head>
 <body>
-
-    <header>
-        <h1>GALERIA</h1>
-    </header>
-    <a href="informacion.html">INFORMACIÓN</a>
-    <a href="galeria.html">GALERIA</a>
-    <a href="index.html">INDEX</a>
-    
+    <header>GALERÍA</header>
+    <nav>
+        <a href="informacion.html" aria-label="Ir a la página de información">INFORMACIÓN</a>
+        <a href="galeria.html" aria-label="Ir a la página de galería">GALERÍA</a>
+        <a href="index.html" aria-label="Ir a la página de inicio">INICIO</a>
+    </nav>
+    <main>
+        <h2>Bienvenido a la Galería</h2>
+        <p>
+            Explora nuestra colección impresionante de imágenes y obras de arte. Navega por las diferentes secciones para descubrir
+            contenido .
+        </p>
+        <p>
+            Utiliza el menú superior para moverte fácilmente entre las páginas de información, la galería de imágenes y esta página de inicio.
+        </p>
+    </main>
+    <footer>
+        &copy; 2025 página web.
+    </footer>
 </body>
 </html>
+
